@@ -45,7 +45,7 @@ export function loader(){
 function Index() {
 
   const clientes = useLoaderData()
-  console.log(clientes)
+  //console.log(clientes)
 
   return (
     <>
