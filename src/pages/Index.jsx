@@ -1,45 +1,11 @@
 import {useLoaderData} from 'react-router-dom'
+import {obtenerClientes} from '../data/clientes'
 import Cliente from '../components/Cliente';
 
 export function loader(){
-  const clientes = [
-    {
-      id: 1,
-      nombre: 'Juan',
-      telefono: 102013313,
-      email: "juan@gmail.com",
-      empresa: 'Osde'
-  },
-  {
-      id: 2,
-      nombre: 'Karen',
-      telefono: 138198313,
-      email: "karen@gmail.com",
-      empresa: 'BBVA'
-  },
-  {
-      id: 3,
-      nombre: 'Josue',
-      telefono: 31983913,
-      email: "josue@gmail.com",
-      empresa: 'Mitsui'
-  },
-  {
-      id: 4,
-      nombre: 'Miguel',
-      telefono: 319381983,
-      email: "miguel@gmail.com",
-      empresa: 'Amazon'
-  },
-  {
-      id: 5,
-      nombre: 'Pedro',
-      telefono: 1398198938,
-      email: "pedro@gmail.com",
-      empresa: 'Mercado Libre'
-  },
-];
-  return clientes
+  //console.log(import.meta.env)
+  const clientes = obtenerClientes()
+  return clientes //siempre tiene que haber un return en los loaders
 }
 
 function Index() {

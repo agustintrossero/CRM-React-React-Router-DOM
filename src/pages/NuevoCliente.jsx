@@ -29,7 +29,6 @@ export async function action ({request}){
     return errores
    }
    //console.log(errores)
-
 }
 
 function NuevoCliente() {
