@@ -10,9 +10,18 @@ export async function action ({request}){
    const datos = Object.fromEntries(formData)
    //console.log(datos)
 
+    const email = formData.get("email")
+    console.log(email)
+
+    //Validaciones
     const errores = []
    if(Object.values(datos).includes("")){
     errores.push("Todos los campos son obligatorios")
+   }
+
+   let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
+   if(!regex.test(email)) {
+    errores.push("El email no es válido");
    }
 
    if(Object.keys(errores).length){
@@ -20,7 +29,7 @@ export async function action ({request}){
     return errores
    }
    //console.log(errores)
-   return null
+
 }
 
 function NuevoCliente() {
@@ -28,7 +37,7 @@ function NuevoCliente() {
   const errores = useActionData()
   const navigate = useNavigate()
 
-  //console.log(errores)
+  console.log(errores)
   return (
     <>
       <h1 className="font-black text-4xl text-blue-900">Nuevo Clientes</h1>
@@ -48,6 +57,7 @@ function NuevoCliente() {
         )}
         <Form
           method='POST'
+          noValidate
         >
           <Formulario/>
             <input 

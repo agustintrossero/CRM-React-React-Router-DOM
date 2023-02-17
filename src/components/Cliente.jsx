@@ -2,6 +2,7 @@
 
 function Cliente({cliente}) {
 
+
     const {nombre, empresa, email, telefono, id} = cliente
   return (
       <tr className="border-b">
