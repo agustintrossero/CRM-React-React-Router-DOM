@@ -1,39 +1,47 @@
 {
-   "clientes": [
-        {
-          "id": 1,
-          "nombre": "Juan",
-          "telefono": 102013313,
-          "email": "juan@gmail.com",
-          "empresa": "Osde"
-      },
-      {
-          "id": 2,
-          "nombre": "Karen",
-          "telefono": 138198313,
-          "email": "karen@gmail.com",
-          "empresa": "BBVA"
-      },
-      {
-          "id": 3,
-          "nombre": "Josue",
-          "telefono": 31983913,
-          "email": "josue@gmail.com",
-          "empresa": "Mitsui"
-      },
-      {
-          "id": 4,
-          "nombre": "Miguel",
-          "telefono": 319381983,
-          "email": "miguel@gmail.com",
-          "empresa": "Amazon"
-      },
-      {
-          "id": 5,
-          "nombre": "Pedro",
-          "telefono": 1398198938,
-          "email": "pedro@gmail.com",
-          "empresa": "Mercado"
-      }
-    ]
+  "clientes": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "telefono": 102013313,
+      "email": "juan@gmail.com",
+      "empresa": "Osde"
+    },
+    {
+      "id": 2,
+      "nombre": "Karen",
+      "telefono": 138198313,
+      "email": "karen@gmail.com",
+      "empresa": "BBVA"
+    },
+    {
+      "id": 3,
+      "nombre": "Josue",
+      "telefono": 31983913,
+      "email": "josue@gmail.com",
+      "empresa": "Mitsui"
+    },
+    {
+      "id": 4,
+      "nombre": "Miguel",
+      "telefono": 319381983,
+      "email": "miguel@gmail.com",
+      "empresa": "Amazon"
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro",
+      "telefono": 1398198938,
+      "email": "pedro@gmail.com",
+      "empresa": "Mercado"
+    },
+    {
+      "nombre": "Agustin",
+      "empresa": "google",
+      "email": "agustintrossero@gmail.com",
+      "telefono": "65732164",
+      "notas": "probando",
+      "id": 6
+    }
+  ]
 }
