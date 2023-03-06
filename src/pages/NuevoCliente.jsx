@@ -12,7 +12,7 @@ export async function action ({request}){
    //console.log(datos)
 
     const email = formData.get("email")
-    console.log(email)
+    //console.log(email)
 
     //Validaciones
     const errores = []
@@ -39,7 +39,7 @@ function NuevoCliente() {
   const errores = useActionData()
   const navigate = useNavigate()
 
-  console.log(errores)
+  //console.log(errores)
   return (
     <>
       <h1 className="font-black text-4xl text-blue-900">Nuevo Clientes</h1>
